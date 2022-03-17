@@ -192,6 +192,7 @@ body {
   -webkit-animation: load7 1.8s infinite ease-in-out;
   animation: load7 1.8s infinite ease-in-out;
 }
+
 .loader {
   color: #50ce9d;
   font-size: 10px;
@@ -203,20 +204,24 @@ body {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
+
 .loader:before,
 .loader:after {
   content: "";
   position: absolute;
   top: 0;
 }
+
 .loader:before {
   left: -3.5em;
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
+
 .loader:after {
   left: 3.5em;
 }
+
 @-webkit-keyframes load7 {
   0%,
   80%,
@@ -227,6 +232,7 @@ body {
     box-shadow: 0 2.5em 0 0;
   }
 }
+
 @keyframes load7 {
   0%,
   80%,

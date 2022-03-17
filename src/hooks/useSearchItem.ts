@@ -44,7 +44,7 @@ function useSearchItem() {
   const { id } = useParams();
   console.log(id, "id en custom hook useSearchItem");
 
-  const setIdState = useSetRecoilState(idState);
+  const setIdState = useSetRecoilState(idState); // --> Solo devuelve el setter, a dif. de  useRecoilState() que devuelve la tupla con value y setter
 
   const results = useRecoilValue(itemState);
 
