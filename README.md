@@ -8,6 +8,8 @@ Buscador de ML con Recoil: https://alayndev.github.io/Recoil-React/
 
 - Stateless Components
 
+- UI Components
+
 - Flux
 
 - React Hooks
@@ -15,6 +17,8 @@ Buscador de ML con Recoil: https://alayndev.github.io/Recoil-React/
 - Custom Hooks
 
 - React Router DOM v6
+
+- CSS Modules
 
 - Fetch
 
