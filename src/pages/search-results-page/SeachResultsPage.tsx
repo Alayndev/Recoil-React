@@ -1,6 +1,7 @@
 import React from "react";
-import { SearchResultItem } from "components/SearchResultItem";
+import { SearchResultItem } from "components/search-result-item/SearchResultItem";
 import { useSearchResults } from "hooks/useSearchResults";
+import css from "./searchResultsPage.css";
 
 function SearchResultPage() {
   const results = useSearchResults();
@@ -9,13 +10,13 @@ function SearchResultPage() {
 
   return (
     <>
-      <div className="container">
-        <h3 className="results-title">
+      <div className={css.container}>
+        <h3 className={css.resultsTitle}>
           Resultados:
-          <span className="results-count">{results.length}</span>
+          <span>{results.length}</span>
         </h3>
 
-        <div className="results">
+        <div>
           {results.map((r) => (
             <SearchResultItem
               key={r.id}

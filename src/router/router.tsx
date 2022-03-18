@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { Layout } from "components/Layout";
-import { Home } from "pages/Home";
-import { SearchResultPage } from "pages/SeachResultsPage";
-import { ItemPage } from "pages/ItemPage";
+import { Layout } from "components/layout/Layout";
+import { Home } from "pages/home/Home";
+import { SearchResultPage } from "pages/search-results-page/SeachResultsPage";
+import { ItemPage } from "pages/item-page/ItemPage";
 
 function AppRouter() {
   return (

@@ -1,0 +1,17 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+.resultsTitle {
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 20px;
+}

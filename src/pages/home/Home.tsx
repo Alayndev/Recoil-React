@@ -1,10 +1,11 @@
 import React from "react";
+import css from "./home.css";
 
 function Home() {
   return (
     <>
-      <div className="title">
-        <h1 style={{ textAlign: "center" }}>
+      <div className={css.container}>
+        <h1 className={css.title}>
           Hace tu búsqueda desde la caja de búsqueda
         </h1>
       </div>

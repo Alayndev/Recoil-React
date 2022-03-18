@@ -1,5 +1,8 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Button } from "ui/buttons";
+import { TextField } from "ui/text-field";
+import css from "./searchForm.css";
 
 function SearchForm() {
   console.log("render SearchForm");
@@ -17,16 +20,14 @@ function SearchForm() {
 
   return (
     <>
-      <form className="search-form" onSubmit={handleSubmit}>
-        <input
+      <form className={css["search-form"]} onSubmit={handleSubmit}>
+        <TextField
           name="product"
           type="text"
-          className="search-input"
           placeholder=" Buscar productos, marcas y más..."
-          required
-        />
+        ></TextField>
 
-        <button className="search-button">BUSCAR</button>
+        <Button>BUSCAR</Button>
       </form>
     </>
   );

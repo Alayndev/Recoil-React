@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, HashRouter } from "react-router-dom";
 import { AppRouter } from "router/router";
-import { Loader } from "components/Loader";
+import { Loader } from "components/loader/Loader";
 import "./index.css";
 
 // Recoil

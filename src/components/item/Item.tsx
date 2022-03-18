@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
+import css from "./item.css";
 
 type ItemProps = {
   title: string;
@@ -17,31 +18,29 @@ function Item(props: ItemProps) {
 
   return (
     <>
-      <div className="card result-item">
+      <div className={css.card}>
         <Carousel isRTL>
           {pictures.map((item) => (
             <img
               key={item.id}
               src={item.secure_url}
               alt="item"
-              className="card__img"
+              className={css.card__img}
             />
           ))}
         </Carousel>
 
-        <div className="card__data">
-          <h4 className="result-item-title">Título: {props.title}</h4>
+        <div className={css.card__data}>
+          <h4 className={css["result-item-title"]}>Título: {props.title}</h4>
 
-          <p className="result-item-sold-quantity">
-            <span className="sold-quantity">
-              {props.warranty ? props.warranty : "Sin garantía"}
-            </span>
+          <p className={css["result-item-sold-quantity"]}>
+            <span>{props.warranty ? props.warranty : "Sin garantía"}</span>
           </p>
 
-          <p className="result-item-price">Precio: ${props.price}</p>
+          <p className={css["result-item-price"]}>Precio: ${props.price}</p>
 
-          <p className="result-item-stock">
-            <a className="stock-counter" href={props.link} target="_blank">
+          <p className={css["result-item-stock"]}>
+            <a href={props.link} target="_blank">
               Ver
             </a>
           </p>
